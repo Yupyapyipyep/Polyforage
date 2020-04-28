@@ -73,25 +73,29 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir)Libs\Assimp\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)Libs\Assimp\Debug;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\Bin\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\Bin-Int\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir)Libs\Assimp\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)Libs\Assimp\Debug\;$(LibraryPath)</LibraryPath>
-    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\Bin\</OutDir>
-    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\Bin-Int\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\Bin\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\Bin-Int\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(ProjectDir)Libs\Assimp\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)Libs\Assimp;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\Bin\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\Bin-Int\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(ProjectDir)Libs\Assimp\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)Libs\Assimp;$(LibraryPath)</LibraryPath>
-    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\Bin\</OutDir>
-    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\Bin-Int\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\Bin\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\Bin-Int\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
